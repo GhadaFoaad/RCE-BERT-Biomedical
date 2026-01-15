@@ -1,12 +1,24 @@
 DATASET FILES FOR REPRODUCIBILITY
 =====================================
 
-This folder contains the data subset used in the paper: 'Harrensing Transformer Knowledge: A Novel Approach for Biomedical Abbreviation Disambiguation'.
+This repository contains the code and resources for the paper: **"A Knowledge Recall Framework for Biomedical Abbreviation Disambiguation Using Pre-trained Transformer Models"**, submitted to IEEE Access.
 
-1. MeDAL_subset_with_folds.csv:
-   - Contains the full subset from the data with instances used in the study.
-   - The 'fold' column indicates which of the 10 cross-validation folds each instance belongs to (0-9).
+## Overview
+This project introduces **Recalled Concept Embedding (RCE)**, a novel method to query latent knowledge from pre-trained transformers (like SciBERT) for disambiguating biomedical abbreviations.
 
-2. MeDAL_subset_instance_ids.txt:
-   - A lightweight text file containing only the unique instance IDs (corresponding to original row numbers) that make up our subset.
-   - This file can be used to reconstruct the exact subset from the original full dataset.
+## Requirements
+*   Python 3.8+
+*   PyTorch
+*   Hugging Face Transformers
+
+Install dependencies:
+```bash
+pip install -r requirements.txt
+  
+Dataset
+This code is compatible with:
+•	MeDAL Subset: (https://www.kaggle.com/datasets/xhlulu/medal-emnlp)
+•	MSH WSD: (https://huggingface.co/datasets/bigbio/msh_wsd)
+How to Run
+1.	Place your dataset CSV in the root folder.
+2.	Run the training script:
