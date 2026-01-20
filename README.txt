@@ -22,5 +22,5 @@ This code is compatible with:
 How to Run
 1.	Place your dataset CSV in the root folder.
 2.  Run the Preprocessing script : Preprocessing.ipynb
-3.	Run the training script: train_model.ipynb
+3.	Run the training script: train_model(RCE_FULL_Model).ipynb
 4.	The script will train the model using 3 random seeds and output the Mean/STD results.
