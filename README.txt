@@ -17,10 +17,11 @@ pip install -r requirements.txt
   
 Dataset
 This code is compatible with:
-•	MeDAL Subset: (https://www.kaggle.com/datasets/xhlulu/medal-emnlp)
+•	MeDAL dataset: (https://www.kaggle.com/datasets/xhlulu/medal-emnlp)
 •	MSH WSD: (https://huggingface.co/datasets/bigbio/msh_wsd)
 How to Run
 1.	Place your dataset CSV in the root folder.
-2.  Run the Preprocessing script : Preprocessing.ipynb
-3.	Run the training script: train_model(RCE_FULL_Model).ipynb
-4.	The script will train the model using 3 random seeds and output the Mean/STD results.
+2. For the MeDaL dataset, run script: MeDAL_Script.ipynb to create subset
+3.  Run the Preprocessing script : Preprocessing.ipynb
+4.	Run the training script: train_model(RCE_FULL_Model).ipynb
+5.	The script will train the model (using your specified transformer) using 3 random seeds and output the Mean/STD results.
